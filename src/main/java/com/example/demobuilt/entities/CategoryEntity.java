@@ -7,6 +7,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Set;
 
 import static jakarta.persistence.CascadeType.ALL;
@@ -16,7 +17,7 @@ import static jakarta.persistence.CascadeType.ALL;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-public class CategoryEntity {
+public class CategoryEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

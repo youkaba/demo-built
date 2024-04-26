@@ -2,7 +2,7 @@ spring:
   application:
     name: demo-built
   datasource:
-    url: jdbc:postgresql://localhost:5432/customer
+    url: jdbc:postgresql://localhost:5432/blog
     driver-class-name: org.postgresql.Driver
     username: ${db_user}
     password: ${db_pass}
